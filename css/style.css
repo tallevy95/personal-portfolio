@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    /* display: flex; */
+    display: block
+}
+
+header {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.nav-links {
+    margin-top: 20px;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+#SITE-FOOTER {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 100%;
+    padding: 1rem;
+}
+
+.horizontal-line {
+    width: 95%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 2rem auto;
+}
+
+.footer-components {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.footer-column {
+    text-align: grid;
+    grid-template-rows: auto 1fr;
+    gap:0.5rem;
+    text-align: center;
+    flex: 1;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.footer-column li {
+    display: inline-block;  /* Ensures items flow in line */
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+    margin-top: 0;
+}
