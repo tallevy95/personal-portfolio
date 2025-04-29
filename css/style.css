@@ -3,13 +3,13 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    /* display: flex; */
-    display: block
 }
 
 header {
     text-align: center;
-    padding: 100px 20px;
+    padding: 100px 20px 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .profile-pic {
@@ -28,12 +28,25 @@ header {
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
+    transition: all 0.2s ease;
 }
 
+.nav-links a:hover {
+    text-decoration: underline;
+}
 
-#SITE-FOOTER {
-    display: grid;
-    grid-template-rows: auto 1fr;
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+#contact {
     width: 100%;
     padding: 1rem;
 }
@@ -51,11 +64,10 @@ header {
     width: 100%;
     margin: 0 auto;
     padding: 0 2rem;
+    flex-wrap: wrap;
 }
 
 .footer-column {
-    text-align: grid;
-    grid-template-rows: auto 1fr;
     gap:0.5rem;
     text-align: center;
     flex: 1;
@@ -74,9 +86,26 @@ header {
     display: inline-block;  /* Ensures items flow in line */
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap:0.5rem;
-    margin-top: 0;
+.icon {
+    width: 18px;
+    height: auto;
+    margin-right: 9px;
+}
+
+.icon:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.main-section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
 }
